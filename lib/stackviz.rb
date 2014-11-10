@@ -1,5 +1,6 @@
 require "stackviz/version"
 require "stackprof"
+require "tempfile"
 
 class Stackviz
   def self.profile(mode: :cpu, path: nil, open: true, &block)
