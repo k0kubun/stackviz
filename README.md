@@ -1,31 +1,25 @@
 # Stackviz
 
-TODO: Write a gem description
+Visual stack profiler using [stackprof](https://github.com/tmm1/stackprof).  
+This gem is a thin stackprof wrapper and provides simple API to see profiling result quickly.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'stackviz'
+```bash
+$ brew install graphviz
+$ gem install stackviz
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install stackviz
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'stackviz'
 
-## Contributing
+Stackviz.profile do
+  1000.times { User.all.to_a }
+end
+```
 
-1. Fork it ( https://github.com/[my-github-username]/stackviz/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+## License
+
+MIT License
