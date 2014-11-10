@@ -1,6 +1,6 @@
 # Stackviz
 
-Visual stack profiler using [stackprof](https://github.com/tmm1/stackprof).  
+Quickly open graph image profiled by [stackprof](https://github.com/tmm1/stackprof).  
 This gem is a thin wrapper of stackprof and provides simple API to see profiling result quickly.
 
 ## Installation
