@@ -1,7 +1,7 @@
 # Stackviz
 
 Visual stack profiler using [stackprof](https://github.com/tmm1/stackprof).  
-This gem is a thin stackprof wrapper and provides simple API to see profiling result quickly.
+This gem is a thin wrapper of stackprof and provides simple API to see profiling result quickly.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Stackviz.profile do
 end
 ```
 
-Stackviz saves cpu time profiling result to `/tmp` directory and open it.
+Stackviz converts profiling result to image by `graphviz`, saves it to `/tmp` directory and `open` it.
 
 ![](http://i.gyazo.com/9d57fc063b27aa9748fca559c8499937.png)
 

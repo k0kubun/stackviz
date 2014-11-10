@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Takashi Kokubun"]
   spec.email         = ["takashikkbn@gmail.com"]
   spec.summary       = %q{Visual stack profiler using stackprof.}
-  spec.description   = %q{Visual stack profiler using stackprof. This gem is a thin stackprof wrapper and provides simple API to see profiling result quickly.}
+  spec.description   = %q{Visual stack profiler using stackprof. This gem is a thin wrapper of stackprof and provides simple API to see profiling result quickly.}
   spec.homepage      = "https://github.com/k0kubun/stackviz"
   spec.license       = "MIT"
 
