@@ -12,8 +12,6 @@ $ gem install stackviz
 
 ## Usage
 
-Stackviz saves cpu time profiling result to `/tmp` directory and open it.
-
 ```ruby
 require 'stackviz'
 
@@ -21,6 +19,10 @@ Stackviz.profile do
   1000.times { User.all.to_a }
 end
 ```
+
+Stackviz saves cpu time profiling result to `/tmp` directory and open it.
+
+![](http://i.gyazo.com/9d57fc063b27aa9748fca559c8499937.png)
 
 ### Specify path to save graph
 
@@ -33,7 +35,7 @@ end
 ### Do not open graph automatically
 
 ```ruby
-Stackviz.profile(path: 'graph.gif') do
+Stackviz.profile(open: false) do
   1000.times { User.all.to_a }
 end
 ```
